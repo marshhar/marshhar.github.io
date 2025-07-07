@@ -2749,7 +2749,7 @@ input, select, textarea {
 			}
 
 			.tiles article.style7 > .image:before {
-				background-color: #1b1b1b;
+				background-color: #4c4c3e; /*#1b1b1b*/
 			}
 
 			body:not(.is-touch) .tiles article:hover > .image {
@@ -3370,7 +3370,7 @@ select:-webkit-autofill {
   }
   
   .tiles article:hover h2 {
-	transform: scale(1.5);
+	transform: scale(1.1);
 	color: white;
   }
   
