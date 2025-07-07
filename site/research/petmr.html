@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Research Projects: PET/MRI Attenuaton Correction | Harry Marshall, MD, PhD</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<link rel="icon" type="image/png" href="../../favicon.png">
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="../../index.html" class="logo">
+									<span class="title">Harry Marshall, MD, PhD</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="../../index.html">Home</a></li>
+							<li><a href="../research/index.html">Research</a></li>
+							<li><a href="../teaching/index.html">Teaching</a></li>
+							<li><a href="#footer">Contact</a></li>
+							<!-- <li><a href="elements.html">Elements</a></li> -->
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>PET/MRI Attenuaton Correction</h1>
+							<span class="image main"><img src="images/pet-mr/pet-mr-banner.png" alt="PET/MR Attenuaton Correction banner" /></span>
+							
+							<h2>Overview</h2>
+				
+							<p>
+								This work formed the core of my PhD research and focused on improving MRI-based attenuation correction (AC) for hybrid PET/MRI and SPECT/MRI systems. Because MRI does not directly encode tissue density, generating accurate attenuation maps (μ-maps) from MR images is a significant challenge—particularly for tissues like lung and cortical bone that exhibit low or no signal on conventional MRI.
+							  </p>
+							  
+							  <p>
+								My research began by evaluating whether MR-based AC performed more reliably in PET or SPECT. Using phantom and animal data, I found that SPECT reconstructions were more robust to inaccuracies in MR-based μ-maps than PET, suggesting that methods developed for PET/MRI might perform even better in emerging SPECT/MRI systems.
+							  </p>
+							  
+							  <p>
+								I then turned my focus to the lungs—an especially problematic region for PET quantification due to their low MR signal and variable internal density. By establishing a relationship (or mapping) between MR signal intensity and CT-derived μ-coefficients, I developed a method to generate patient-specific lung μ-maps, improving accuracy over conventional segmentation-based approaches that assume uniform lung density.
+							  </p>
+							  
+							  <p>
+								The final stage of my work addressed the challenge of incorporating bone, which is often invisible on standard MR sequences but contributes substantially to photon attenuation. I used a deformable registration approach to align patient MRIs with a CT atlas, enabling bone to be added to MR-based μ-maps and significantly improving PET quantification in and around skeletal structures.
+							  </p>
+							  
+							  <p>
+								Quantitatively accurate PET in PET/MRI is essential for reliable oncologic imaging—both for initial staging and for assessing treatment response. This work helped define early strategies for MR-based μ-map generation and demonstrated that a hybrid of segmentation, mapping, and registration can achieve more accurate PET/MRI quantification than traditional approaches.
+							  </p>
+							  
+							  
+
+							<h2>Publications</h2>
+							<ul>
+								<li>
+									<a href="https://iopscience.iop.org/article/10.1088/0031-9155/56/14/024/meta" target="_blank">
+										<strong>A comparison of MR-based attenuation correction in PET versus SPECT<br>Phys Med Biol, 2011</strong> 
+									</a><br>
+									This study evaluated whether MR-based attenuation correction algorithms developed for PET can be applied to SPECT. Using phantom and canine imaging, it found that MR-based AC yielded more accurate and robust reconstructions in SPECT than PET, supporting the feasibility of MR-based SPECT attenuation correction.
+									<br><br>
+								</li>
+								<li>
+									<a href="https://jnm.snmjournals.org/content/53/6/977.short" target="_blank">
+										<strong>Variable lung density consideration in attenuation correction of whole-body PET/MRI<br>J Nucl Med, 2012</strong> 
+									</a><br>
+									This study developed a method to infer patient-specific lung density from MRI for use in attenuation correction, and demonstrated that it significantly improves PET quantification accuracy in the lungs and adjacent tissues compared to conventional constant-density approaches.
+									<br><br>	
+								</li>
+								<li>
+									<a href="https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.4816301" target="_blank">
+										<strong>Description and assessment of a registration-based approach to include bones for attenuation correction of whole-body PET/MRI<br>Med Phys, 2013</strong> 
+									</a><br />
+									This study introduced a method to improve PET/MRI attenuation correction by adding bone information from a matched CT atlas via deformable registration. Incorporating bone significantly reduced PET quantification error in and around bony structures, without introducing clinically significant changes elsewhere in the image <a href="#figure-1">(Figure 1)</a>.
+								</li>
+							</ul>
+						
+							<p>
+								The full thesis is available through <a href="https://ir.lib.uwo.ca/etd/559/" target="_blank" rel="noopener">Western University’s electronic thesis repository</a>.
+							</p>
+							
+							<a id="figure-1"></a>
+							<span class="image main">
+								<img src="images/pet-mr/VOI-analysis.png" alt="Figure 1: Region of interest analysis for MR-based AC with and without bones" />
+								</span>
+								<p style="text-align: center; font-style: italic; margin-top: 0.5rem;">
+								Figure 1: Adding bone to MRI-based μ-maps reduced PET quantification errors in bone while preserving accuracy in other tissues.
+								</p>
+
+							<h2>Impact</h2>
+							<p>
+							  The strategies developed during this project remain relevant today, as the field continues to explore deep learning–based image synthesis and the expanding clinical role of PET/MRI in oncology.
+							</p>
+							
+							<p>
+							  On a personal level, this project laid the foundation for many aspects of my future work. It sparked my interest in image processing and machine learning, and helped me develop the technical skills needed to work at the interface of imaging, software, and science. More importantly, it immersed me in the discipline of scientific research — from rigorous experimental design to collaborative problem-solving with engineers and physicists — and showed me how thoughtfully designed methods can make imaging more accurate, reproducible, and clinically meaningful.
+							</p>
+							
+							
+
+						</div>
+							
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Connect</h2>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/harry-r-marshall" target="_blank" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/marshhar" target="_blank" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://twitter.com/harryrmarshall" target="_blank" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Harry Marshall. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

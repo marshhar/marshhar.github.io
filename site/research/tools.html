@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Research Projects: Image Analysis & Tools | Harry Marshall, MD, PhD</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<link rel="icon" type="image/png" href="../../favicon.png">
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="../../index.html" class="logo">
+									<span class="title">Harry Marshall, MD, PhD</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="../../index.html">Home</a></li>
+							<li><a href="../research/index.html">Research</a></li>
+							<li><a href="../teaching/index.html">Teaching</a></li>
+							<li><a href="#footer">Contact</a></li>
+							<!-- <li><a href="elements.html">Elements</a></li> -->
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Image Analysis & Tools</h1>
+							<span class="image main"><img src="images/tools/tools-banner.png" alt="Image Analysis & Tools banner" /></span>
+							
+							<h2>Overview</h2>
+				
+							<p>
+								This section highlights a range of projects aimed at developing tools to assist radiologists in interpreting medical images more accurately, efficiently, and consistently. These tools address diverse clinical challenges—from assessing vascular invasion in pancreatic adenocarcinoma to segmenting tumors across multiple organs—and span a variety of techniques, including segmentation networks, adversarial learning, and interactive frameworks. While anatomically and technically diverse, the common goal is to reduce inter-reader variability, automate labor-intensive tasks, and generate high-quality data for research and clinical use.
+							</p>
+						
+							<p>
+								These projects also helped deepen my interest in image analysis and machine learning, and laid the foundation for my ongoing efforts to build radiologist-facing software tools. Future spin-offs from my abbreviated Primovist trial, including lesion detection, segmentation, and classification tools, will also be added here as they are developed.
+							</p>
+							  
+							  
+
+							<h2>Publications</h2>
+							<ul>
+
+							<!-- PROSTATE -->
+							<li>
+								<a href="https://iopscience.iop.org/article/10.1088/1361-6560/ad6ace/meta" target="_blank">
+								<strong>Boundary-aware semantic clustering network for segmentation of prostate zones from T2-weighted MRI<br>Phys Med Biol, 2024</strong>
+								</a><br>
+								Developed a boundary-aware network (BASC-Net) that improves segmentation of the peripheral and central gland zones in prostate MRI by focusing on features near tissue boundaries. BASC-Net outperformed nine state-of-the-art methods across multiple datasets.  
+								<br>
+								<em>Clinical relevance:</em> Enables more accurate lesion localization and may improve targeted biopsy planning by clearly delineating zonal anatomy.
+								<br><br>
+							</li>
+
+							<li>
+								<a href="https://www.mdpi.com/2306-5354/11/8/796" target="_blank">
+								<strong>Interactive cascaded network for prostate cancer segmentation from multimodality MRI with automated quality assessment<br>Bioengineering, 2024</strong>
+								</a><br>
+								Proposed a hybrid segmentation pipeline combining automated deep learning with selective user input via the Segment Anything Model. The method reduced manual annotation burden by 50% while preserving segmentation accuracy.  
+								<br>
+								<em>Clinical relevance:</em> Offers a scalable, time-efficient approach to high-quality lesion segmentation for image-guided biopsy or treatment.
+								<br><br>
+							</li>
+
+							<li>
+								<a href="https://aapm.onlinelibrary.wiley.com/doi/abs/10.1002/mp.16374" target="_blank">
+								<strong>Prostate cancer segmentation from MRI by a multistream fusion encoder<br>Med Phys, 2023</strong>
+								</a><br>
+								Developed a multistream encoder that fuses features from T2-weighted and diffusion-weighted MRI at multiple scales. A patch-based loss function improved performance on small lesions, and the model outperformed several existing methods across 900+ cases.  
+								<br>
+								<em>Clinical relevance:</em> Improves segmentation of subtle or small prostate lesions, supporting accurate focal therapy or biopsy targeting.
+								<br><br>
+							</li>
+
+							<!-- LIVER -->
+							<li>
+								<a href="https://www.sciencedirect.com/science/article/abs/pii/S1361841521002000" target="_blank">
+								<strong>United adversarial learning for liver tumor segmentation and detection of multi-modality non-contrast MRI<br>Med Image Anal, 2021</strong>
+								</a><br>
+								Proposed a multitask adversarial network that detects and segments hemangiomas and hepatocellular carcinoma using only non-contrast MRI <a href="#figure-1">(Figure 1)</a>. The model achieved high Dice scores and accuracy without requiring contrast-enhanced imaging.  
+								<br>
+								<em>Clinical relevance:</em> Offers a non-contrast alternative for liver tumor screening or triage in patients where contrast is contraindicated or unavailable.
+								<br><br>
+							</li>
+
+							<!-- KIDNEY -->
+							<li>
+								<a href="https://www.sciencedirect.com/science/article/abs/pii/S1361841520300852" target="_blank">
+								<strong>MB-FSGAN: Joint segmentation and quantification of kidney tumor on CT by the multi-branch feature sharing generative adversarial network<br>Med Image Anal, 2020</strong>
+								</a><br>
+								Introduced a generative adversarial network that jointly segments kidney tumors and quantifies morphometric indices. The model achieved 95.7% pixel accuracy and strong agreement with manual tumor measurements across five indices.  
+								<br>
+								<em>Clinical relevance:</em> Enables reproducible, automated quantification of renal masses to aid diagnosis, tracking, and treatment planning.
+								<br><br>
+							</li>
+
+							<!-- PANCREAS -->
+							<li>
+								<a href="https://journals.sagepub.com/doi/full/10.1177/08465371231217155" target="_blank">
+								<strong>A visual aid tool for detection of pancreatic tumour–vessel contact on staging CT: A retrospective cohort study<br>Can Assoc Radiol J, 2024</strong>
+								</a><br>
+								Designed a density-based visual aid that improved radiology residents’ sensitivity and balanced accuracy in identifying superior mesenteric artery invasion in patients with pancreatic adenocarcinoma.  
+								<br>
+								<em>Clinical relevance:</em> Supports more accurate staging of pancreatic cancer and may enhance resident education and decision-making.
+							</li>
+
+							</ul>
+
+							<a id="figure-1"></a>
+							<span class="image main">
+								<img src="images/tools/UAL-output.png" alt="Figure 1: UAL heatmap output" />
+							</span>
+							<p style="text-align: center; font-style: italic; margin-top: 0.5rem;">
+							Figure 1: Heatmaps generated by the united adversarial learning model for detecting liver tumors from multi-sequence non-contrast MRI. High activation areas (red) correspond to predicted tumor regions.
+							</p>
+
+							<h2>Impact</h2>
+							<p>
+								These projects reflect my growing interest in practical, high-performance tools that support radiologists in routine clinical tasks. While most are early-stage research, they lay the groundwork for future AI-powered assistants in lesion detection, segmentation, and staging.
+							</p>
+							<p>
+							Many of these techniques will ultimately be incorporated into the AI-enabled clinical viewer we're building — helping radiologists work faster, more consistently, and with greater confidence.
+							</p>
+							
+							
+
+						</div>
+							
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Connect</h2>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/harry-r-marshall" target="_blank" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/marshhar" target="_blank" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://twitter.com/harryrmarshall" target="_blank" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Harry Marshall. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
