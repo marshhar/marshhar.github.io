@@ -3374,13 +3374,3 @@ select:-webkit-autofill {
 	color: white;
   }
   
-  /* Preserve line breaks on tiles in mobile*/
-  .tiles article > a h2 {
-  white-space: pre-line;
-}
-
-.tiles article > a h2 {
-  display: block;
-  white-space: normal;
-  text-align: center;
-}
