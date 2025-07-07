@@ -3378,3 +3378,9 @@ select:-webkit-autofill {
   .tiles article > a h2 {
   white-space: pre-line;
 }
+
+.tiles article > a h2 {
+  display: block;
+  white-space: normal;
+  text-align: center;
+}
