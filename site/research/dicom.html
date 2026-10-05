@@ -6,9 +6,9 @@
 -->
 <html>
 	<head>
-		<title>Research Projects: AI-Enabled DICOM Viewer | Harry Marshall, MD, PhD</title>
+		<title>Research Projects: MRMC DICOM Viewer | Harry Marshall, MD, PhD</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 		<link rel="icon" type="image/png" href="../../favicon.png">
@@ -51,12 +51,11 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>AI-Enabled DICOM Viewer</h1>
-							<!-- <span class="image main"><img src="images/tools/tools-banner.png" alt="AI-Enabled DICOM Viewer banner" /></span> -->
+							<h1>MRMC DICOM Viewer</h1>
+							<!-- <span class="image main"><img src="images/tools/tools-banner.png" alt="MRMC DICOM Viewer banner" /></span> -->
 							
-							<p>
-								Under development. Check back soon!
-							</p>
+							<p>In collaboration with <a href="https://www.bainesimaging.com/" target="_blank" rel="noopener noreferrer">Baines Imaging Research Laboratories (Ward lab)</a>, we are developing a multi-reader, multi-case (MRMC) DICOM viewer to support radiology reader studies. The platform brings together <a href="https://ohif.org/" target="_blank" rel="noopener noreferrer">OHIF</a>, <a href="https://www.orthanc-server.com/" target="_blank" rel="noopener noreferrer">Orthanc</a>, and <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">MongoDB</a>.<br><br>Our next step is to develop it into a tool for radiology education and evaluation. Future work may extend its use to more complex trials and incorporate AI where it can support these goals.</p>
+<p><a class="button primary" href="https://baines-webquiz-deploy.onrender.com/" target="_blank" rel="noopener noreferrer">Open MRMC viewer</a></p>
 						
 							
 
@@ -69,17 +68,21 @@
 						<div class="inner">
 							<section>
 								<h2>Get in touch</h2>
-								<form method="post" action="https://formspree.io/f/mvgalzow">
+								<p class="contact-notice">Please do not send patient information or other confidential health information through this form. For matters involving patient care, use your institution’s approved communication channels.</p>
+<form method="post" action="https://formspree.io/f/mvgalzow">
 									<input type="hidden" name="_captcha" value="false">
 									<div class="fields">
 										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
+											<label for="name">Name</label>
+<input type="text" name="name" id="name" placeholder="Name" />
 										</div>
 										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
+											<label for="email">Email</label>
+<input type="email" name="email" id="email" placeholder="Email" />
 										</div>
 										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
+											<label for="message">Message</label>
+<textarea name="message" id="message" placeholder="Message"></textarea>
 										</div>
 									</div>
 									<ul class="actions">

@@ -3373,4 +3373,34 @@ select:-webkit-autofill {
 	transform: scale(1.1);
 	color: white;
   }
-  
+
+/* Improve tile title readability while preserving images and hover effects. */
+.tiles article > a h2 {
+  text-shadow: 0 1px 2px #000, 0 0 5px rgba(0, 0, 0, .9);
+}
+
+/* Keep availability visible before opening an empty lecture category. */
+.tiles .lecture-status { display: block; margin-top: .75em; padding: .25em .65em; border-radius: .2em; background: #191919; color: #fff; font-size: .8em; font-weight: 600; letter-spacing: .04em; }
+
+/* Unavailable categories retain readable labels without suggesting an action. */
+.tiles article.is-coming-soon { cursor: default; }
+.tiles article.is-coming-soon > .image { filter: grayscale(.85); }
+.tiles article.is-coming-soon > .image,
+body:not(.is-touch) .tiles article.is-coming-soon:hover > .image { transform: none; }
+.tiles article.is-coming-soon > .image:before,
+body:not(.is-touch) .tiles article.is-coming-soon:hover > .image:before { background-color: #333; opacity: .55; }
+.tiles article.is-coming-soon > .image:after,
+body:not(.is-touch) .tiles article.is-coming-soon:hover > .image:after { opacity: .25; }
+.tiles .tile-unavailable { position: absolute; inset: 0; z-index: 3; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1em; text-align: center; color: #fff; }
+.tiles .tile-unavailable h2,
+.tiles article.is-coming-soon:hover h2 { margin: 0; transform: none; text-shadow: 0 1px 2px #000, 0 0 5px rgba(0,0,0,.9); }
+
+/* Keep navigation in the header layout so it cannot cover page content. */
+#header > .inner { display: flex; align-items: flex-start; justify-content: space-between; gap: 1.5em; flex-wrap: wrap; }
+#header .logo { flex: 1 1 14em; min-width: 0; }
+#header nav { position: static; flex: 0 0 auto; margin: 0 0 2.5em; }
+.publication-title { display: block; font-weight: 700; }
+.publication-citation { display: block; margin: .2em 0 .65em; font-size: .9em; font-style: italic; font-weight: 400; color: #d0d0d0; }
+.research-figure { margin: 2em 0; scroll-margin-top: 1em; }
+.research-figure > img { display: block; width: 100%; height: auto; }
+.research-figure figcaption { margin-top: .65em; font-size: .95em; font-style: italic; text-align: center; }

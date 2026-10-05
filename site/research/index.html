@@ -8,7 +8,7 @@
 	<head>
 		<title>Research Projects | Harry Marshall, MD, PhD</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 		<link rel="icon" type="image/png" href="../../favicon.png">
@@ -64,19 +64,19 @@
 									</a>
 								</article>
 								<article class="style2">
-									<span class="image">
-										<img src="images/index/tools-tile.jpeg" alt="Image analysis and tools" />
-									</span>
-									<a href="tools.html">
-										<h2>Image Analysis & Tools</h2>
-									</a>
-								</article>
+<span class="image"><img src="images/index/prostate-segmentations.png" alt="Prostate MRI with zonal segmentation overlays" style="aspect-ratio: 353 / 326; object-fit: contain; background: #000;" /></span>
+<a href="tools.html"><h2>Image Analysis &amp; Segmentation</h2></a>
+</article>
+<article class="style5">
+<span class="image"><img src="images/index/tools-tile.jpeg" alt="Visual aid for assessing pancreatic tumour-vessel contact" /></span>
+<a href="reader-performance.html"><h2>Radiologist Performance &amp; Education</h2></a>
+</article>
 								<article class="style3">
 									<span class="image">
-										<img src="images/index/viewer-tile.jpeg" alt="AI-enabled DICOM viewer" />
+										<img src="images/index/viewer-tile.jpeg" alt="MRMC DICOM viewer" />
 									</span>
 									<a href="dicom.html">
-										<h2>AI-Enabled DICOM Viewer</h2>
+										<h2>MRMC DICOM Viewer</h2>
 									</a>
 								</article>
 								<article class="style4">
@@ -96,18 +96,22 @@
 						<div class="inner">
 							<section>
 								<h2>Get in touch</h2>
-								<form method="post" action="https://formspree.io/f/mvgalzow">
+								<p class="contact-notice">Please do not send patient information or other confidential health information through this form. For matters involving patient care, use your institution’s approved communication channels.</p>
+<form method="post" action="https://formspree.io/f/mvgalzow">
 									<input type="hidden" name="_captcha" value="false">
 
 									<div class="fields">
 										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
+											<label for="name">Name</label>
+<input type="text" name="name" id="name" placeholder="Name" />
 										</div>
 										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
+											<label for="email">Email</label>
+<input type="email" name="email" id="email" placeholder="Email" />
 										</div>
 										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
+											<label for="message">Message</label>
+<textarea name="message" id="message" placeholder="Message"></textarea>
 										</div>
 									</div>
 									<ul class="actions">
